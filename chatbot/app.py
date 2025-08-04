@@ -8,7 +8,7 @@ import json
 
 # ==== Load Models and Assets ====
 
-model = tf.keras.models.load_model('chatbot_dl_model.keras')
+model = tf.keras.models.load_model('chatbot_dl_model.h5')
 
 with open('chatbot_ml_model.pkl', 'rb') as f:
     ml_model = pickle.load(f)
