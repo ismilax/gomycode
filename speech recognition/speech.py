@@ -19,7 +19,7 @@ def transcribe_speech(api_choice, language):
     with sr.Microphone() as source:
         st.info("Listening... Speak now.")
         try:
-            audio = recognizer.listen(source, timeout=5, phrase_time_limit=10)
+            audio = recognizer.listen(source, timeout=10, phrase_time_limit=20)
         except sr.WaitTimeoutError:
             return "No speech detected. Please try again."
     
